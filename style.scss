@@ -1,10 +1,7 @@
 /* RALEWAY */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@font-face {
-    font-family: "Shrikhand";
-    src: url("Shrikhand/Shrikhand-Regular.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 /* RESET GENERAL */
 body{
     margin: 0px;
@@ -29,7 +26,7 @@ figure{
 /* CSS GENERAL */
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;;
 }
 
 h1{
@@ -280,7 +277,7 @@ main{
     max-width: 150px;
 	margin-top: 15px;
 	margin-bottom: 15px;
-    font-family: Shrikhand;
+    font-family: 'Shrikhand', cursive;
     color: white;
 }
 footer{
