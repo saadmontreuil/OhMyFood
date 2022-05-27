@@ -1,0 +1,319 @@
+/* RALEWAY */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url("Shrikhand/Shrikhand-Regular.otf");
+}
+/* RESET GENERAL */
+body{
+    margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+figure{
+  margin: 0px;
+}
+
+/* couleurs */
+.white{
+    color: white;
+}
+
+.gris{
+    color: #646464;
+}
+/* CSS GENERAL */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 1.7em;
+}
+
+h1, h2{
+    font-weight: bolder;
+    font-size: 1.7em;
+}
+
+h3{
+    margin: 0px;
+    margin-bottom: 5px;
+}
+/* Logo */
+#figureOhmyfood{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    margin-top: 20px;
+    
+  }
+  .logoOhmyfood{
+    width: 22%;
+    min-width: 150px;
+    max-width: 250px;
+  }
+/* Header ville */
+#selection_ville{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+    background-color: #e7e7e7f1;
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+}
+/* header general */
+header{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.background_header{
+    background-color: #F2F2F2;
+    padding-bottom: 50px;
+}
+
+.headerPresentation{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* coeurs vide/plein */
+.like{
+    position: relative;
+}
+.coeur_vide{
+
+    font-size: 20px;
+    &:hover{
+        opacity: 0%;
+        transition: 0.1s;
+    }
+}
+
+.coeur_plein{
+    position: absolute;
+    bottom: 27px;
+    left: 2px;
+    opacity: 0;
+    width: 35px;
+
+    &:hover{
+        position: absolute;
+        background: linear-gradient(40deg, #ff79da, #9356dc);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 23px;
+        opacity: 1;
+        transition: 0.3s;
+        bottom: 24px;
+        left: -1px;
+    }
+}
+/* main */
+main{
+
+    h2{
+        margin-left: 20px;
+    }
+}
+/* Bouton restaurants */
+#selectionRestaurant{
+    margin-top: 30px;
+}
+.btn_restaurant{
+    text-decoration: none;
+    padding: 15px 25px 15px 25px;
+    border-radius: 30px;
+    font-weight: bolder;
+    color: white;
+    background: linear-gradient(170deg, #FF79DA, #9356DC );
+    box-shadow: 0px 1px 5px #616161;
+    font-size: 0.8em;
+
+    &:hover{
+        background: linear-gradient(170deg, #fa87d9, #9d6fd6 );
+        box-shadow: 0px 5px 10px #616161;
+    }
+}
+
+/* fonctionnement > 3 boutons */
+.rond_choix{
+    border: 1px solid #9356DC;
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    margin-left: -10px;
+}
+
+.fonctionnementBoutons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#choix_1, #choix_2, #choix_3{
+    display: flex;
+    align-items: center;
+    width: 340px;
+    height: 65px;
+    max-width: 350px;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+    background-color: #F2F2F2;
+    box-shadow: 0px 0px 10px #C2C2C2;
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+
+    i{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    &:hover{
+        background-color: #dbbeff86;
+        transition: 0.5s;
+        font-size: 1.05em;
+
+        i{
+            color: #9356DC;
+            transition: 0.5s;
+        }
+    }
+}
+/* titre restaurants */
+#titre_article_restaurants{
+    width: 100%;
+}
+/* Section restaurants */
+#sectionRestaurants{
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+/* figure dans > Section restaurants */
+.restaurants_photo{
+    box-shadow: 0px 0px 10px #C2C2C2;
+    position: relative;
+    border-radius: 20px;
+    width: 310px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+
+    img{
+        width: 310px;
+        height: 191px;
+        border-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        object-fit: cover;
+    }
+
+    &:hover{
+        transform: scale(1.025);
+        transition-duration: 0.2s;
+    }
+}
+/* Figcaption */
+.figcaption_restaurants{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 15px 20px;
+}
+/* Nouveau produit */
+.new_product{
+    position: absolute;
+    padding: 5px 10px 5px 10px;
+    font-weight: bolder;
+    background-color: #99E2D0;
+    color: #006b50;
+    right: 10px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+.new_product_2{
+    position: absolute;
+    padding: 5px 10px 5px 10px;
+    font-weight: bolder;
+    background-color: #99E2D0;
+    color: #006b50;
+    right: 10px;
+    top: 15px;
+    border-radius: 5px;
+}
+/* FOOTER */
+/* LOGO */
+#footer_logo
+{
+	width: 30%;
+    max-width: 150px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+    font-family: Shrikhand;
+    color: white;
+}
+footer{
+    border: 1px solid #3d3d3d;
+    background-color: #3d3d3d;
+    padding-top: 2%;
+    padding-left: 25px;
+	text-align: left;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+.footer_texte{
+	margin-bottom: 10px;
+}
+
+.footer_texte_a{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+	
+	a{
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (min-width: 768px) { /* pour format 768px et + */
+    .restaurants_photo{
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+}
