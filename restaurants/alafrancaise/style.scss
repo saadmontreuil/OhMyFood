@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+h2, h3, p
+{
+	margin: 0px;
+}
+
+figure{
+	margin: 0px;
+}
+/* CSS GENERAL */
+body{
+    font-family: Raleway;
+	text-align: center;
+	margin: 0px;
+	background-color: #F2F2F2;
+}
+
+h1{
+	font-family: Shrikhand;
+}
+/* COULEURS */
+.white{
+	color: white;
+}
+/* HEADER GENERAL */
+.headerTop{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* coeurs vide/plein */
+.like{
+    position: relative;
+}
+.coeur_vide{
+
+    font-size: 20px;
+    &:hover{
+        opacity: 0;
+        transition: 0.1s;
+    }
+}
+
+.coeur_plein{
+    position: absolute;
+    opacity: 0;
+	left: -7px;
+	top: 0px;
+    width: 35px;
+
+    &:hover{
+        background: linear-gradient(40deg, #ff79da, #9356dc);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 23px;
+        opacity: 1;
+        transition: 0.3s;
+    }
+}
+/* ICON BACK */
+.back_arrow_icon{
+	color: #9356dc;
+
+	&:hover{
+		color: #ff79da;
+		transition: 0.5s;
+	}
+}
+/* LOGO */
+#figureOhmyfood{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    
+  }
+  .logoOhmyfood{
+    width: 20%;
+    min-width: 175px;
+	margin-top: 5%;
+	margin-bottom: 3%;
+  }
+/* IMAGE HEADER */
+#header_plat_image{
+	width: 100%;
+	max-height: 500px;
+	object-fit: cover;
+}
+/* TITRE A LA FRANCAISE */
+#figureRelative{
+	position: relative;
+
+	.figcaption_titre{
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		border-radius: 30px 30px 0px 0px;
+		background-color: #F2F2F2;
+		bottom: 0px;
+
+		h1{
+			margin-left: 3%;
+		}
+
+		div{
+			margin-right: 3%;
+		}
+	}
+}
+
+main{
+	margin-left: 3%;
+	margin-right: 3%;
+
+	h3{
+		font-size: 1em;
+		font-weight: bold;
+		margin-bottom: 1%;
+	}
+}
+
+/* FOOTER */
+/* LOGO */
+#footer_logo
+{
+	width: 15%;
+	min-width: 120px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-family: Shrikhand;
+	color: white;
+}
+footer{
+    border: 1px solid #3d3d3d;
+    background-color: #3d3d3d;
+	margin-top: 80px;
+    padding-top: 2%;
+    padding-left: 25px;
+	text-align: left;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.footer_texte{
+	margin-bottom: 10px;
+}
+
+.footer_texte_a{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+	
+	a{
+		margin-bottom: 10px;
+	}
+}
