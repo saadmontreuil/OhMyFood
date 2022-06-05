@@ -138,15 +138,120 @@ h1 {
   margin-right: 3%;
 }
 
+/* MAIN -> ENTREES PLATS DESSERTS */
 main {
   margin-left: 3%;
   margin-right: 3%;
+}
+
+main h2 {
+  text-align: left;
+  font-size: 1.1em;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  color: #616060;
+  border-bottom: 3px solid #99E2D0;
+  width: 45px;
+  padding-bottom: 5px;
 }
 
 main h3 {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 1%;
+}
+
+.animationHover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 72px;
+  width: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 0px;
+}
+
+.check {
+  font-size: 1em;
+}
+
+/* ENTREES */
+.entreesCartouche, .platsCartouche, .dessertsCartouche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2%;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 5px #bbbbbb;
+          box-shadow: 0px 0px 5px #bbbbbb;
+}
+
+.entreesCartouche a, .platsCartouche a, .dessertsCartouche a {
+  text-decoration: none;
+}
+
+.cartoucheTexte {
+  text-align: left;
+  width: 90%;
+  padding: 10px 10px 10px 10px;
+}
+
+.cartoucheTexte h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cartoucheTexte p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cartouchePrix {
+  font-weight: bold;
+  padding: 10px 10px 10px 10px;
+}
+
+/* BOUTON COMMANDER */
+.commander {
+  padding: 15px 0px 15px 0px;
+  border-radius: 30px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 5%;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  -webkit-box-shadow: 0px 1px 5px #616161;
+          box-shadow: 0px 1px 5px #616161;
+}
+
+.commander a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+.commander:hover {
+  background: linear-gradient(170deg, #fa87d9, #9d6fd6);
+  -webkit-box-shadow: 0px 5px 10px #616161;
+          box-shadow: 0px 5px 10px #616161;
 }
 
 /* FOOTER */
@@ -191,5 +296,31 @@ footer a {
 
 .footer_texte_a a {
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  /* pour format 768px et + */
+  .entrees_bloc, .plats_bloc, .desserts_bloc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .entrees_bloc .entreesCartouche, .entrees_bloc .platsCartouche, .entrees_bloc .dessertsCartouche, .plats_bloc .entreesCartouche, .plats_bloc .platsCartouche, .plats_bloc .dessertsCartouche, .desserts_bloc .entreesCartouche, .desserts_bloc .platsCartouche, .desserts_bloc .dessertsCartouche {
+    min-width: 400px;
+    max-width: 600px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  /* pour format 415px et - */
+  .entreesCartouche .cartoucheTexte, .platsCartouche .cartoucheTexte, .dessertsCartouche .cartoucheTexte {
+    width: 75%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
