@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
+
 h2, h3, p
 {
 	margin: 0px;
@@ -12,7 +13,7 @@ figure{
 }
 /* CSS GENERAL */
 body{
-    font-family: Raleway;
+	font-family: Raleway;
 	text-align: center;
 	margin: 0px;
 	background-color: #F2F2F2;
@@ -33,32 +34,32 @@ h1{
 }
 /* coeurs vide/plein */
 .like{
-    position: relative;
+	position: relative;
 }
 .coeur_vide{
 
-    font-size: 20px;
-    &:hover{
-        opacity: 0;
-        transition: 0.1s;
-    }
+	font-size: 20px;
+	&:hover{
+		opacity: 0;
+		transition: 0.1s;
+	}
 }
 
 .coeur_plein{
-    position: absolute;
-    opacity: 0;
+	position: absolute;
+	opacity: 0;
 	left: -7px;
 	top: 0px;
-    width: 35px;
+	width: 35px;
 
-    &:hover{
-        background: linear-gradient(40deg, #ff79da, #9356dc);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        font-size: 23px;
-        opacity: 1;
-        transition: 0.3s;
-    }
+	&:hover{
+		background: linear-gradient(40deg, #ff79da, #9356dc);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		font-size: 23px;
+		opacity: 1;
+		transition: 0.3s;
+	}
 }
 /* ICON BACK */
 .back_arrow_icon{
@@ -71,17 +72,17 @@ h1{
 }
 /* LOGO */
 #figureOhmyfood{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2%;
-    
-  }
-  .logoOhmyfood{
-    width: 20%;
-    min-width: 175px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2%;
+
+}
+.logoOhmyfood{
+	width: 20%;
+	min-width: 175px;
 	margin-top: 5%;
 	margin-bottom: 3%;
-  }
+}
 /* IMAGE HEADER */
 #header_plat_image{
 	width: 100%;
@@ -111,11 +112,21 @@ h1{
 		}
 	}
 }
-
+/* MAIN -> ENTREES PLATS DESSERTS */
 main{
 	margin-left: 3%;
 	margin-right: 3%;
 
+	h2{
+		text-align: left;
+		font-size: 1.1em;
+		margin-bottom: 5%;
+		margin-top: 5%;
+		color: #616060;
+		border-bottom: 3px solid #99E2D0;
+		width: 45px;
+		padding-bottom: 5px;
+	}
 	h3{
 		font-size: 1em;
 		font-weight: bold;
@@ -123,6 +134,83 @@ main{
 	}
 }
 
+.animationHover{
+	display: flex;
+	background-color: #99E2D0;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	height: 72px;
+	width: 70px;
+	align-items: center;
+	justify-content: center;
+	margin-right: 0px;
+}
+
+.check{
+	font-size: 1em;
+}
+/* ENTREES */
+.entreesCartouche, .platsCartouche, .dessertsCartouche{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2%;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0px 0px 5px #bbbbbb;
+
+
+	a{
+		text-decoration: none;
+	}
+}
+
+.cartoucheTexte{
+	text-align: left;
+	width: 90%;
+	padding: 10px 10px 10px 10px;
+
+	h3{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	p{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+.cartouchePrix{
+	font-weight: bold;
+	padding: 10px 10px 10px 10px;
+}
+/* BOUTON COMMANDER */
+.commander{
+
+	padding: 15px 0px 15px 0px;
+	border-radius: 30px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 5%;
+	background: linear-gradient(170deg, #FF79DA, #9356DC );
+	box-shadow: 0px 1px 5px #616161;
+
+	a{
+		text-decoration: none;
+		color: white;
+		font-size: 1.2em;
+	}
+
+	&:hover{
+		background: linear-gradient(170deg, #fa87d9, #9d6fd6 );
+		box-shadow: 0px 5px 10px #616161;
+	}
+}
 /* FOOTER */
 /* LOGO */
 #footer_logo
@@ -135,17 +223,17 @@ main{
 	color: white;
 }
 footer{
-    border: 1px solid #3d3d3d;
-    background-color: #3d3d3d;
+	border: 1px solid #3d3d3d;
+	background-color: #3d3d3d;
 	margin-top: 80px;
-    padding-top: 2%;
-    padding-left: 25px;
+	padding-top: 2%;
+	padding-left: 25px;
 	text-align: left;
 
-    a{
-        text-decoration: none;
-        color: white;
-    }
+	a{
+		text-decoration: none;
+		color: white;
+	}
 }
 
 .footer_texte{
@@ -156,8 +244,31 @@ footer{
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 25px;
-	
+
 	a{
 		margin-bottom: 10px;
+	}
+}
+
+@media screen and (min-width: 768px) { /* pour format 768px et + */
+	.entrees_bloc, .plats_bloc, .desserts_bloc{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.entreesCartouche, .platsCartouche, .dessertsCartouche{
+			min-width: 400px;
+			max-width: 600px;
+			margin: 10px;
+
+			
+		}
+	}
+}
+@media screen and (max-width: 415px){ /* pour format 415px et - */
+	.entreesCartouche, .platsCartouche, .dessertsCartouche{
+		.cartoucheTexte{
+			width: 75%;
+		}
+
 	}
 }
