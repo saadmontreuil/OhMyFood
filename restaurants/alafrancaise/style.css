@@ -10,7 +10,7 @@ figure {
 
 /* CSS GENERAL */
 body {
-  font-family: Raleway;
+  font-family: Roboto;
   text-align: center;
   margin: 0px;
   background-color: #F2F2F2;
@@ -176,7 +176,7 @@ main h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 0px;
+  margin-right: -80px;
 }
 
 .check {
@@ -199,6 +199,21 @@ main h3 {
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 5px #bbbbbb;
           box-shadow: 0px 0px 5px #bbbbbb;
+  overflow: hidden;
+}
+
+.entreesCartouche:hover .animationHover, .platsCartouche:hover .animationHover, .dessertsCartouche:hover .animationHover {
+  margin-right: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.entreesCartouche:hover .check, .platsCartouche:hover .check, .dessertsCartouche:hover .check {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 600ms 50ms ease-in-out;
+  transition: 600ms 50ms ease-in-out;
+  font-size: 1.5em;
 }
 
 .entreesCartouche a, .platsCartouche a, .dessertsCartouche a {
