@@ -82,7 +82,7 @@ h1 {
   transition: 0.5s;
 }
 
-/* LOGO */
+/* Logo */
 #figureOhmyfood {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,14 +90,44 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 2%;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .logoOhmyfood {
-  width: 20%;
-  min-width: 175px;
-  margin-top: 5%;
-  margin-bottom: 3%;
+  width: 22%;
+  min-width: 150px;
+  max-width: 250px;
+}
+
+/* Header ville */
+#selection_ville {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0px 20px 0px;
+  background-color: #e7e7e7f1;
+}
+
+#selection_ville a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* header general */
+header {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.background_header {
+  background-color: #F2F2F2;
+  padding-bottom: 50px;
 }
 
 /* IMAGE HEADER */
@@ -206,6 +236,10 @@ main h3 {
   margin-right: 0px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.entreesCartouche:hover .cartoucheTexte, .platsCartouche:hover .cartoucheTexte, .dessertsCartouche:hover .cartoucheTexte {
+  width: 60%;
 }
 
 .entreesCartouche:hover .check, .platsCartouche:hover .check, .dessertsCartouche:hover .check {
