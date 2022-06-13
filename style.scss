@@ -44,6 +44,10 @@ h3{
     margin: 0px;
     margin-bottom: 5px;
 }
+
+
+@import"sass/animations/loader";
+
 @import"sass/layout/header";
 
 .headerPresentation{
@@ -188,24 +192,28 @@ main{
     position: relative;
     border-radius: 20px;
     width: 310px;
-    height: 270px;
+    height: 245px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 7%;
 
     img{
         width: 310px;
-        height: 191px;
+        height: 162px;
         border-radius: 20px;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         object-fit: cover;
+        object-position: bottom;
     }
 
     &:hover{
         transform: scale(1.025);
         transition-duration: 0.2s;
     }
+}
+#lanoteenchantee{
+    object-position: 30%;
 }
 /* Figcaption */
 .figcaption_restaurants{
@@ -241,5 +249,17 @@ main{
     .restaurants_photo{
         margin-right: 40px;
         margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) { /* pour format 768px et - */
+    #sectionRestaurants a{
+        width: 90%;
+    }
+    .restaurants_photo{
+        width: 100%;
+    }
+    .restaurants_photo img{
+        width: 100%;
     }
 }

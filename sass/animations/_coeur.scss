@@ -1,0 +1,29 @@
+/* coeurs vide/plein */
+.like{
+	position: relative;
+}
+.coeur_vide{
+
+	font-size: 20px;
+	&:hover{
+		opacity: 0;
+		transition: 0.1s;
+	}
+}
+
+.coeur_plein{
+	position: absolute;
+	opacity: 0;
+	left: -7px;
+	top: 0px;
+	width: 35px;
+
+	&:hover{
+		background: linear-gradient(40deg, $secondaire_color, $primaire_color);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		font-size: 23px;
+		opacity: 1;
+		transition: 0.3s;
+	}
+}
