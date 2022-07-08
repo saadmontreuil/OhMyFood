@@ -1,25 +1,28 @@
 /* ICON BACK */
 .back_arrow_icon{
-	color: #9356dc;
+	color: rgba(17, 2, 2, 0.911);
 
 	&:hover{
 		color: #ff79da;
 		transition: 0.5s;
 	}
 }
+.back_arrow{
+    position: absolute;
+    left: 6%;
+}
+
 /* Logo */
-#figureOhmyfood{
+.figureOhmyfood{
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Shrikhand;
+    font-size: 40px;
     
   }
-  .logoOhmyfood{
-    width: 22%;
-    min-width: 150px;
-    max-width: 250px;
-  }
+
 /* Header ville */
 #selection_ville{
     display: flex;
@@ -43,4 +46,7 @@ header{
 .background_header{
     background-color: #F2F2F2;
     padding-bottom: 50px;
+}
+#figureOhmyfood{
+    
 }

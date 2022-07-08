@@ -1,3 +1,4 @@
+@import "../variables/variables";
 /* coeurs vide/plein */
 .like{
 	position: relative;
@@ -24,6 +25,6 @@
 		-webkit-background-clip: text;
 		font-size: 23px;
 		opacity: 1;
-		transition: 0.3s;
+		transition: 1.2s;
 	}
 }

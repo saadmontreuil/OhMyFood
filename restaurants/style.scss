@@ -35,42 +35,19 @@ h1{
 	align-items: center;
 }
 /* coeurs vide/plein */
-.like{
-	position: relative;
-}
-.coeur_vide{
-
-	font-size: 20px;
-	&:hover{
-		opacity: 0;
-		transition: 0.1s;
-	}
-}
-
-.coeur_plein{
-	position: absolute;
-	opacity: 0;
-	left: -7px;
-	top: 0px;
-	width: 35px;
-
-	&:hover{
-		background: linear-gradient(40deg, $secondaire_color, $primaire_color);
-		-webkit-text-fill-color: transparent;
-		-webkit-background-clip: text;
-		font-size: 23px;
-		opacity: 1;
-		transition: 0.3s;
-	}
-}
+@import "../sass/animations/coeur";
 
 @import "../sass/layout/header";
 
 /* IMAGE HEADER */
 #header_plat_image{
 	width: 100%;
-	max-height: 500px;
+	max-height: 324px;
 	object-fit: cover;
+	
+}
+#phototop{
+	object-position: 50% 50%;
 }
 /* TITRE A LA FRANCAISE */
 #figureRelative{
@@ -142,6 +119,10 @@ main{
 	border-radius: 15px;
 	box-shadow: 0px 0px 5px #bbbbbb;
 	overflow: hidden;
+	animation: fondu 3s;
+    -moz-animation: fondu 3s;
+    -webkit-animation: fondu 3s;
+
 
 	&:hover{
 		.animationHover{
@@ -165,6 +146,8 @@ main{
 		text-decoration: none;
 	}
 }
+
+@import"../sass/animations/fondu";
 
 .cartoucheTexte{
 	text-align: left;
@@ -220,7 +203,7 @@ main{
 		justify-content: center;
 		flex-wrap: wrap;
 		.entreesCartouche, .platsCartouche, .dessertsCartouche{
-			min-width: 400px;
+			min-width: 319px;
 			max-width: 600px;
 			margin: 10px;
 

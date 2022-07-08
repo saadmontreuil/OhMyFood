@@ -39,6 +39,7 @@ h1 {
 }
 
 /* coeurs vide/plein */
+/* coeurs vide/plein */
 .like {
   position: relative;
 }
@@ -62,18 +63,18 @@ h1 {
 }
 
 .coeur_plein:hover {
-  background: linear-gradient(40deg, #ff79da, #9356dc);
+  background: linear-gradient(40deg, #FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-size: 23px;
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
 }
 
 /* ICON BACK */
 .back_arrow_icon {
-  color: #9356dc;
+  color: rgba(17, 2, 2, 0.911);
 }
 
 .back_arrow_icon:hover {
@@ -82,22 +83,23 @@ h1 {
   transition: 0.5s;
 }
 
+.back_arrow {
+  position: absolute;
+  left: 6%;
+}
+
 /* Logo */
-#figureOhmyfood {
+.figureOhmyfood {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.logoOhmyfood {
-  width: 22%;
-  min-width: 150px;
-  max-width: 250px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: Shrikhand;
+  font-size: 40px;
 }
 
 /* Header ville */
@@ -133,9 +135,14 @@ header {
 /* IMAGE HEADER */
 #header_plat_image {
   width: 100%;
-  max-height: 500px;
+  max-height: 324px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#phototop {
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 /* TITRE A LA FRANCAISE */
@@ -230,6 +237,9 @@ main h3 {
   -webkit-box-shadow: 0px 0px 5px #bbbbbb;
           box-shadow: 0px 0px 5px #bbbbbb;
   overflow: hidden;
+  animation: fondu 3s;
+  -moz-animation: fondu 3s;
+  -webkit-animation: fondu 3s;
 }
 
 .entreesCartouche:hover .animationHover, .platsCartouche:hover .animationHover, .dessertsCartouche:hover .animationHover {
@@ -252,6 +262,33 @@ main h3 {
 
 .entreesCartouche a, .platsCartouche a, .dessertsCartouche a {
   text-decoration: none;
+}
+
+/* animation fondu entrees, plats et desserts */
+@keyframes fondu {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fondu {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .cartoucheTexte {
@@ -317,7 +354,6 @@ main h3 {
 footer {
   border: 1px solid #3d3d3d;
   background-color: #3d3d3d;
-  margin-top: 80px;
   padding-top: 2%;
   padding-left: 25px;
   text-align: left;
@@ -360,7 +396,7 @@ footer a {
         flex-wrap: wrap;
   }
   .entrees_bloc .entreesCartouche, .entrees_bloc .platsCartouche, .entrees_bloc .dessertsCartouche, .plats_bloc .entreesCartouche, .plats_bloc .platsCartouche, .plats_bloc .dessertsCartouche, .desserts_bloc .entreesCartouche, .desserts_bloc .platsCartouche, .desserts_bloc .dessertsCartouche {
-    min-width: 400px;
+    min-width: 319px;
     max-width: 600px;
     margin: 10px;
   }

@@ -45,7 +45,11 @@ h3 {
 
 /* animation background loader */
 .backgroud_loader {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 50;
   width: 100%;
   height: 100%;
@@ -63,6 +67,7 @@ h3 {
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -75,6 +80,7 @@ h3 {
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -159,7 +165,7 @@ h3 {
 
 /* ICON BACK */
 .back_arrow_icon {
-  color: #9356dc;
+  color: rgba(17, 2, 2, 0.911);
 }
 
 .back_arrow_icon:hover {
@@ -168,22 +174,23 @@ h3 {
   transition: 0.5s;
 }
 
+.back_arrow {
+  position: absolute;
+  left: 6%;
+}
+
 /* Logo */
-#figureOhmyfood {
+.figureOhmyfood {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.logoOhmyfood {
-  width: 22%;
-  min-width: 150px;
-  max-width: 250px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: Shrikhand;
+  font-size: 40px;
 }
 
 /* Header ville */
@@ -238,8 +245,8 @@ header {
 
 .coeur_plein {
   position: absolute;
-  bottom: 27px;
-  left: 2px;
+  bottom: 26px;
+  left: 1.5px;
   opacity: 0;
   width: 35px;
 }
@@ -251,10 +258,10 @@ header {
   -webkit-background-clip: text;
   font-size: 23px;
   opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  bottom: 24px;
-  left: -1px;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+  bottom: 26px;
+  left: -1.5px;
 }
 
 /* main */
@@ -387,7 +394,7 @@ main h2 {
   position: relative;
   border-radius: 20px;
   width: 310px;
-  height: 245px;
+  height: 230px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 7%;
@@ -413,8 +420,8 @@ main h2 {
 }
 
 #lanoteenchantee {
-  -o-object-position: 30%;
-     object-position: 30%;
+  -o-object-position: 50% 65%;
+     object-position: 50% 65%;
 }
 
 /* Figcaption */
@@ -425,7 +432,7 @@ main h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 20px 15px 20px;
+  padding: 8px 16px 2px 25px;
 }
 
 /* Nouveau produit */
