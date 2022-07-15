@@ -83,7 +83,7 @@ main{
 		margin-bottom: 5%;
 		margin-top: 5%;
 		color: #616060;
-		border-bottom: 3px solid #99E2D0;
+		border-bottom: 3px solid $tertiaire_color;
 		width: 45px;
 		padding-bottom: 5px;
 	}
@@ -96,7 +96,7 @@ main{
 
 .animationHover{
 	display: flex;
-	background-color: #99E2D0;
+	background-color: $tertiaire_color;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 	height: 72px;
